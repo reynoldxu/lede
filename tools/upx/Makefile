@@ -7,13 +7,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=upx
-PKG_VERSION:=3.95
+PKG_VERSION:=4.0.0
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-src.tar.xz
-PKG_SOURCE_URL:=https://github.com/upx/upx/releases/download/v$(PKG_VERSION)
-PKG_HASH:=3b0f55468d285c760fcf5ea865a070b27696393002712054c69ff40d8f7f5592
-
-HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)-$(PKG_VERSION)-src
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=319b97711e74ad62f5ce6d49ba6ce0d1c6b3c3da
+PKG_SOURCE_URL:=https://github.com/upx/upx.git
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-src.tar.gz
 
 include $(INCLUDE_DIR)/host-build.mk
 
